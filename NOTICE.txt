@@ -1,0 +1,12 @@
+The 8th Airforce - free, non-commercial, for IL-2 Great Battles only.
+
+- B-17E exterior, cockpit, turret guns, skins: Jungle Hawks WT build. Contains War Thunder (Gaijin Entertainment)
+  derived parts - credit only, not a licence.
+- Nose art pictures: B-17 Flying Fortress: The Mighty 8th Redux (David Lagettie, Ken Hall, Chris Bates-Keegan,
+  Eduardo Garcia, Ben Bastian, Shane Gavin).
+- Engine sounds: VSM Sound Mod v7.5 (IL-2 1946) samples.
+- MasterBank.bank is a modified copy of the IL-2 Great Battles sound bank (c) 1C Game Studios: every stock sound
+  plus the cloned B-17E engine events. Crew figures, bomb meshes, host aircraft and career data (c) 1C Game Studios.
+- B-17E performance reference: IL-2 1946 B-17E flight model data (1C).
+- GB Mod Loader 1.5.0 and the planeint plugin base (scriptcrc): Dusty. Redistributed with Dusty's permission.
+- jhfm (fork of Dusty's fmfix), crew seating, career squadron: Pingu / Jungle Hawks.
