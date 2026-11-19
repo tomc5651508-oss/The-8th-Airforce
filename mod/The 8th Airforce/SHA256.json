@@ -168,10 +168,10 @@
  "data/LuaScripts/WorldObjects/bots/P4_Pilot_Pe2s35.txt": "516421ef0e74fc89a56e7f2413cb93de31210dbbd95d8aac151645fe4a8ae379",
  "data/LuaScripts/WorldObjects/planes/Pe2s35.txt": "a39deb13b47baf27f03c8f7b0f7bde437ce9ffc8cee56de0a04473d75fd908c0",
  "data/LuaScripts/WorldObjects/planes/Turrets/P4_b17_Gun_1.txt": "657b853769116df61e83bc98cab7d79ba8875c4b213c244af456e893237b5993",
- "data/LuaScripts/WorldObjects/planes/Turrets/P4_b17_Gun_10.txt": "f296956e68b4775af730151d90c2a83acf47ed45d29fad9f32721068954c5a18",
+ "data/LuaScripts/WorldObjects/planes/Turrets/P4_b17_Gun_10.txt": "18d76433f788a1b0c46fed64bab670b5b5957099a451e17018d0ffaeb76ea5a3",
  "data/LuaScripts/WorldObjects/planes/Turrets/P4_b17_Gun_11.txt": "417f70c25de8c1451d4b6a724ee74f12df6c9305ab83ff68e30c395ae02ffc26",
- "data/LuaScripts/WorldObjects/planes/Turrets/P4_b17_Gun_12.txt": "e7f02abe6b3e54a8a4085c1ade2345c98f6e7d0bb974c17523db9afbb24e549a",
- "data/LuaScripts/WorldObjects/planes/Turrets/P4_b17_Gun_13.txt": "b54f0dfa20dd8a0c1e4e2e6c6496500b415df413936144d5bf439784d8f7c0ae",
+ "data/LuaScripts/WorldObjects/planes/Turrets/P4_b17_Gun_12.txt": "60b242730f0316ba9954b5623360f879d0ceb24f748450b0636716bef0aeb842",
+ "data/LuaScripts/WorldObjects/planes/Turrets/P4_b17_Gun_13.txt": "a9a85aee0710904fd688d6410c7f29118129844624f8fb1e338ee08889fca6b4",
  "data/LuaScripts/WorldObjects/planes/Turrets/P4_b17_Gun_2.txt": "048ee3939d2ac1d5f9ab9fed0c135c8be6a926deddb4a052bd2a9c7f71875c1d",
  "data/LuaScripts/WorldObjects/planes/Turrets/P4_b17_Gun_9.txt": "6d7e48d5133e604ee63914d4eab7dd89ee5b4a61cd4da656592f3a8aec81af25",
  "data/LuaScripts/WorldObjects/planes/Turrets/P4_Place_P4_Copilot_b17.txt": "4e854ed98c4c0ab93e077ce6c84a34494489a726eb8d0e239a8934ba68a1cc49",
@@ -581,5 +581,5 @@
  "data/swf/il2/worldobjects/planes/pe2s35/skins/pe2s35_skin_07.dds": "df164a565339bd778de8b1b7e7c44e5ca8d10df3149529cf64ed89e5568520c7",
  "data/swf/il2/worldobjects/planes/pe2s35/skins/pe2s35_skin_08.dds": "df164a565339bd778de8b1b7e7c44e5ca8d10df3149529cf64ed89e5568520c7",
  "data/swf/il2/worldobjects/planes/pe2s35/skins/pe2s35_skin_09.dds": "df164a565339bd778de8b1b7e7c44e5ca8d10df3149529cf64ed89e5568520c7",
- "README - The 8th Airforce.txt": "425bfceda1d373ce753f0ca5808b264c13c33423215edda52383b238eef1962a"
+ "README - The 8th Airforce.txt": "a63de4c12e95afaf9a7d2bc624a0ed2e46fd04876f238a9ca4658beecf90cf8b"
 }

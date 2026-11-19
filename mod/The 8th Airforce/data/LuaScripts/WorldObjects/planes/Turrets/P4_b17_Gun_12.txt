@@ -37,7 +37,7 @@ VisualRadius=2.0
 mp_site=true
 
 [attach=0]
-	position = 0.517150, -1.359432, -0.003001
+	position = -0.517150, -1.359432, 0.003001
 	object = "LuaScripts/WorldObjects/Bots/P4_Gunner_b17_12.txt"
 	rotation= 0.000000, 180.000000, 0.000000
 [end]
