@@ -1,0 +1,5 @@
+﻿&name=10 x 100 kg bombs (250 lb class)
+&description=Ten 104 kg general purpose bombs in the bomb bay
+Additional mass: 1040 kg
+Estimated speed loss before drop: 23 km/h
+Estimated speed loss after drop: 0 km/h

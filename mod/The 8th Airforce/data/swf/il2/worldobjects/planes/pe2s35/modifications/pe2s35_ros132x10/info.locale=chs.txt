@@ -1,0 +1,7 @@
+﻿&name=10 x rockets (host option, not a B-17 fit)
+&description=Pe-2 host rocket rails
+增加质量：280 kg
+弹药质量：230 kg
+挂架质量：50 kg
+发射前预期速度损失：31 km/h
+发射后预期速度损失：20 km/h

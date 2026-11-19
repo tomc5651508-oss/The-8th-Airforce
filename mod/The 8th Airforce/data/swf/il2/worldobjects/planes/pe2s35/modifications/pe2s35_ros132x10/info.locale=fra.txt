@@ -1,0 +1,8 @@
+﻿&name=10 x rockets (host option, not a B-17 fit)
+&description=Pe-2 host rocket rails
+&description=10 roquettes Explosives Brisantes non guidées ROS-132 de 132 mm
+Masse supplémentaire : 280 kg
+Masse des munitions : 230 kg
+Masse des rails : 50 kg
+Perte estimée de vitesse avant le lancement : 31 km/h
+Perte estimée de vitesse après le lancement : 20 km/h

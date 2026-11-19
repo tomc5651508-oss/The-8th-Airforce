@@ -1,0 +1,8 @@
+﻿&name=10 x rockets (host option, not a B-17 fit)
+&description=Pe-2 host rocket rails
+&description=10 x ungelenkte 132-mm-Explosivraketen ROS-132
+Zusätzliches Gewicht: 280 kg
+Gewicht der Munition: 230 kg
+Gewicht der Abwurfwaffenroste: 50 kg
+Geschwindigkeitsverlust vor dem Abfeuern: 31 km/h
+Geschwindigkeitsverlust nach dem Abfeuern: 20 km/h

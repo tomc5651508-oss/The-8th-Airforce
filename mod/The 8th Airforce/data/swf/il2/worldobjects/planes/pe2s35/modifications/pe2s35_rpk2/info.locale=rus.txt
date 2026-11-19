@@ -1,0 +1,4 @@
+﻿&name=Radio compass
+&description=Bendix radio compass loop for navigation
+Additional mass: 20 kg
+Estimated speed loss: 2 km/h

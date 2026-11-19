@@ -1,0 +1,69 @@
+// JH 2.5 WT: B-26 side-gunner rig (Rgt), arms re-posed onto the B-17 waist gun spade grips (b17_crew\waist_pose.py)
+model="PilotUSAF_bomb_cmdr_su.mgm"
+keyframes="graphics\Characters\Keyframes\B26\JH_B17_Waist_R.mkf"
+
+FramesCount=681
+
+FPS=30
+
+//	Animations while in cockpit
+
+[Animation = idle]
+	Range=0,550
+	NextAnimation="idle" 
+	Transistion=0.3
+[end]
+
+[Animation = death]
+	Range=560,632
+	NextAnimation="death_static"
+	Rename="",""	//Deny any further animation changing
+	Transistion=0.3
+[end]
+
+[Animation = death_static]
+	Range=632,633
+	NextAnimation="death_static"
+	Rename="",""	//Deny any further animation changing
+	Transistion=0.3
+[end]
+
+[Animation = sit_knockout]
+	Range=632,633
+	NextAnimation="sit_knockout"
+	Transistion=1.0
+[end]
+
+//	Leaving, primary way
+
+[Animation = leave] // delay before detach = 20 frames
+	Range=640,681
+	NextAnimation="leaveCycle"
+	Transistion=0.0
+[end]
+
+[Animation = leaveCycle]
+	Range=680,681
+	NextAnimation="leaveCycle"
+	Rename="death","leaveDeadCycle"
+	Transistion=0.3
+[end]
+
+[Animation = leaveDead]
+	Range=640,681
+	NextAnimation="leaveDeadCycle"
+	Transistion=0.3
+[end]
+
+[Animation = leaveDeadCycle]
+	Range=680,681
+	NextAnimation="leaveDeadCycle"
+	Transistion=0.3
+[end]
+
+
+ArgAlias=22013, 1	//argNum, isAutoAnimated
+ArgAlias=22002, 0
+ArgAlias=22003, 0
+ArgAlias=22016, 0
+ArgAlias=13, 0	//argNum, isAutoAnimate

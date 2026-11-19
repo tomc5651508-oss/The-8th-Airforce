@@ -1,0 +1,105 @@
+&id=luascripts/worldobjects/planes/pe2s35.txt
+&order=510
+&model=graphics/planes/pe2s35/pe2s35.mgm
+
+&type=1
+
+&isPlayerControlled=1
+&isFighter=0
+&isBomber=1
+&isRecon=0
+&isHydroplane=0
+
+&countriesId=101
+&units=metric
+
+&cruiseSpeed=370
+&fuel=1505
+&efficiency=0.7
+
+&modifications=
+id,	entityId,			group|
+1,	pe2s35_FAB100x10,	1|
+2,	pe2s35_FAB250x4,	1|
+3,	pe2s35_FAB500x2,	1|
+5,	pe2s35_RPK2,		2|
+
+&paintSchemes=
+unlockId,	id,				country,	denyTaccode|
+1,	pe2s35/JH_B17E_Late_WT.dds,	101|
+2,	pe2s35/JH_B17E_41-2504_WT.dds,	101,	1|
+3,	pe2s35/JH_B17E_WT_Original.dds,	101|
+
+&stations=
+id,
+	isMain,
+		shortId, 				name,				x,		y,		row|
+1,	,	BotGunner_pe2s35top,	ostRearGunner,		0.66,	0.45,	-2|
+2,	,	BotGunner_pe2s35rear,	ostBottomGunner,	0.44,	0.60,	 2|
+
+&stationsWeapons=
+stationId,
+	positionId,
+		ammunitionId,
+						positionName,
+											modsOn,	modsOff|
+1,	0,	"0-M250-AP",	ostTop|
+1,	1,	"0-M250-AP",	ostTop|
+1,	2,	"0-M250-AP",	ostTop|
+2,	0,	"0-JHM250-APHE",	ostBelly|
+2,	1,	"1-M250-AP",	ostLeft|
+2,	2,	"1-M250-AP",	ostRight|
+
+&bombsightId=pe2s87
+
+&bombsightInfo=
+"
+&type=common
+&bombsLayerAmountMax=10
+&planeAltitudeMax=9000
+&planeAltitudeMin=400
+&showBombsAmountControl=1
+&showBombsAmountIndicator=1
+&showBombsDoorsControl=1
+&showPlaneAccelerationIndicator=1
+&showPlaneAltitudeControl=1
+&showPlaneAltitudeIndicator=1
+&showPlaneDirectionControl=1
+&showPlaneDirectionIndicator=1
+&showPlaneSpeedControl=1
+&showPlaneSpeedIndicator=1
+&showWindDirectionControl=1
+&showWindSpeedControl=1
+&showAirHorisontIndicator=1
+&showSightModeControl=1
+&showSightAngleControl=1
+&maxf=75
+&maxb=15
+&modeResetBombs=
+id,		inside,	outside|
+0,		1,		0|
+1,		2,		0|
+2,		4,		0|
+3,		16,		0|
+"
+
+
+&characterStuff=greenflare,redflare,whiteflare,colt1911tankman,photo
+
+
+&systemsPad=
+x,															// Позиция ячейки по-горизонтали (допускается дробное значение, например, "1.5")
+		y,													// Позиция ячейки по-вертикали (допускается дробное значение, например, "1.5")
+				id,											// Идентификатор индикатора (список ниже)
+								image,						// Изображение (если не указано, берётся из поля "id")
+										hasOutline|         // Изображение составное, флаг показывает есть ли рамка
+
+0.0,	0.0,	recoverAmmo,    ,       1|
+1.0,	0.0,	recoverFuel,    ,       1|
+0.0,	1.0,	recoverSystems, ,       1|
+1.0,	1.0,	recoverCrew,    ,       1|
+
+&tacticalCodeSpaceAfterCharID=
+countryID,
+		charID|
+-1,		1|

@@ -1,0 +1,8 @@
+﻿&name=10 x rockets (host option, not a B-17 fit)
+&description=Pe-2 host rocket rails
+&description=10 x niekierowany kruszący pocisk rakietowy ROS-132 – 132 mm
+Additional mass: 280 kg
+Ammunition mass: 230 kg
+Racks mass: 50 kg
+Estimated speed loss before launch: 31 km/h
+Estimated speed loss after launch: 20 km/h

@@ -1,0 +1,7 @@
+﻿&name=10 x rockets (host option, not a B-17 fit)
+&description=Pe-2 host rocket rails
+Peso adicional: 280 kg
+Peso de munición: 230 kg
+Peso de los soportes: 50 kg
+Pérdida de velocidad estimada antes de lanzarlos: 31 km/h
+Pérdida de velocidad estimada tras lanzarlos: 20 km/h

@@ -1,0 +1,34 @@
+lod="graphics/characters/Pilot_USAF/10_p4_p4_pilot_pe2s35.mgm",35
+
+[kfgroup=a20b]
+	keyframes="graphics\Characters\Keyframes\A20B\Pilot_A20B.mkf","graphics\Characters\Keyframes\A20B\Pilot_A20B.ckf"
+	keyframes="graphics\Characters\Keyframes\A20B\Pilot_A20OnField.mkf","graphics\Characters\Keyframes\A20B\Pilot_A20OnField.ckf"
+[end]
+[kfgroup=b25d]
+	keyframes="graphics\Characters\Keyframes\B25D\Pilot_B25D_Second.MKF","graphics\Characters\Keyframes\B25D\Pilot_B25D_Second.ckf"
+	keyframes="graphics\Characters\Keyframes\B25D\Pilot_B25D_First.MKF","graphics\Characters\Keyframes\B25D\Pilot_B25D_First.ckf"
+	keyframes="graphics\Characters\Keyframes\B25D\CharB25DOnField.mkf","graphics\Characters\Keyframes\B25D\CharB25DOnField.ckf"
+[end]
+[kfgroup=b26]
+	keyframes="graphics\Characters\Keyframes\B26\Pilot_B26_First.mkf","graphics\Characters\Keyframes\B26\Pilot_B26_First.ckf"
+	keyframes="graphics\Characters\Keyframes\B26\Pilot_B26_Second.mkf","graphics\Characters\Keyframes\B26\Pilot_B26_Second.ckf"
+	keyframes="graphics\Characters\Keyframes\B25D\CharB25DOnField.mkf","graphics\Characters\Keyframes\B25D\CharB25DOnField.ckf"
+[end]
+[kfgroup=c47a]
+	keyframes="graphics\Characters\Keyframes\C47A\Pilot_C47A_First.mkf","graphics\Characters\Keyframes\C47A\Pilot_C47A_First.ckf"
+	keyframes="graphics\Characters\Keyframes\C47A\Pilot_C47A_Second.mkf","graphics\Characters\Keyframes\C47A\Pilot_C47A_Second.ckf"
+	keyframes="graphics\Characters\Keyframes\C47A\CharC47AOnField.mkf","graphics\Characters\Keyframes\C47A\CharC47AOnField.ckf"
+[end]
+CloseSphere=0.0,0.65,0.0,0.7
+
+DefArg=-1,0.5
+DefArg=0,0.0
+DefArg=1,0.5
+DefArg=2,0.5
+DefArg=24,1.0
+DefArg=25,1.0
+DefArg=26,0.0
+DefArg=30,0.0
+DefArg=402,0.5
+DefArg=406,0.5
+DefArg=407,0.5

@@ -1,0 +1,131 @@
+Class_name = "CBotCharacter"
+object_name = "P4_Copilot_b17"
+detail_type = "DET_INFANTRY" //list of types is in \inc\SimulationSystem\DetailTypes.inc
+
+//////	PhysicsBody properties
+VisualImage=2,"graphics/characters/Pilot_USAF/p4_p4_copilot_b17.mgm",true
+CollisionBody="graphics/characters/Pilot_USAF/PilotUSAF_bomb_cmdr_su.col"
+Animator="graphics/characters/Keyframes/B25D/JH_B17_Copilot.chr","GOT_EJECTION_PLACE"
+Animator="graphics/characters/Keyframes/B25D/CharB25DOnField.chr","GOT_NONE"
+kfgroup="b25d"	//Name of used group of keyframes in .txt of .MGM model of the character
+
+[attach=0]
+	position= 0.2, 0.72, 0
+	object = "LuaScripts/WorldObjects/Bots/BotHead.txt"
+[end]
+
+SoundScript="LuaScripts/Sound/Vehicles/BotSound.cfg"
+
+NeckAngleConstrX=-100,100;
+NeckAngleConstrY=-175.0,175.0;
+NeckAngleConstrZ=-120,120;
+
+NeckSlideConstrX=-0.40,0.40;
+NeckSlideConstrY=-0.45,0.45;
+NeckSlideConstrZ=-0.45,0.45;
+
+ScarfAxisYArg=10
+ScarfAxisZArg=11
+ScarfPhaseArg=12
+
+ProtectiveGlassesOnEyesArg=24
+OxygenMaskOnFaceArg=25
+ArmorArg=26
+
+energyloss="",true,0.1,10000 // Потеря энергии пули при попадании, true - проверка на входе и выходе в колижн-бокс, первое эквивалентная броня на входе и выходе, второе джоулей на каждый метр пути внутри колижена
+energyloss="armor1",true,5,1	//Бронежилет перед
+energyloss="armor2",true,5,1	//Бронежилет зад
+energyloss="armor3",true,5,1	//Каска
+
+//////	Bot specific
+Controller="LuaScripts/WorldObjects/Bots/Ejector_AI.txt"
+
+// Damage model
+Armor=0 // толщина брони
+LifeRate=250 // Масштаб пулевых и фугасных повреждений
+LifeRateFrag=500 // Масштаб осколочных повреждений
+HeadConvexPrefix="Head" // Префикс имени конвекса колижена головы
+HeadArmor=0 // толщина брони головы
+HeadLifeRate=50 // Масштаб пулевых и фугасных повреждений головы
+HeadLifeRateFrag=100 // Масштаб осколочных повреждений головы
+Firing=1 // Минимальное значение поджигания у средства поражения для зажигания объекта
+DestroyDelay=15 // задержка на удаление объекта после смерти
+MinEjectAlt=10 // ограничение на минимальную высоту выпрыгивания
+OxygenMaskType=2 // тип кислородной маски: 0 - нет (так же "нет" если кислорода нет в самолете), 1 - мундштук Fokker D.7, 2 - маска WW2
+
+[SphereHitArmorBox]
+	FovH=90
+	FovV=120
+	ArmorFront=5
+	ArmorBack=5
+	ArmorTop=0
+	ArmorBottom=0
+	ArmorRight=0
+	ArmorLeft=0
+[end]
+[SphereHitHeadArmorBox]
+	FovH=90
+	FovV=60
+	ArmorFront=5
+	ArmorBack=5
+	ArmorTop=5
+	ArmorBottom=0
+	ArmorRight=5
+	ArmorLeft=5
+[end]
+
+RepairSpeed=0.005555	// Скорость исцеления, долей жизни в секунду (полное излечение за 3 минуты)
+RepairSource=1	// Тип мастерской, необходимой для исправления
+//	VMRI_REPAIR=0
+//	VMRI_REHEAL=1
+//	VMRI_REARM=2
+//	VMRI_REFUEL=3
+//	VMRI_SERVICEREPAIR=4
+
+//логирование повреждений
+logtreshold=0.0001
+
+//// Eject properties ////
+
+EjectDelay=0.7667, 0.001	//Задержка до детача после начала покидания для определенного [Entrance] (должно соответствовать кол-во), степерь функции перемещения бота (0.001 - instantly)
+ParachuteDelay=2		//	Opening parachute delay while free fall (sec)
+MaxParachuteSpeed=60	//	m/s
+
+SplashConfig="LuaScripts\WorldObjects\Emitters\WaterSpray1.txt"
+
+[Parachute]
+	MaxOpeningTension=40.0f	//	Slings tension while opening parachute (kg)
+
+	MinRad=0.5f
+	MaxRad=4.0f
+	MaxSlings=8.4f
+
+	//MaxRad=2.9f
+	//MaxSlings=6.0f
+
+	SlingsDuration=2.5f
+	PDuration=1
+
+	VisibleParachute="LuaScripts/WorldObjects/Bots/Parachute01Usaf.txt"
+
+	SlingsAttach=0.06f,0.62f,0.0f
+[end]
+
+ImpulseToDestroy = 500		// Определяет силу удара обеъкта об танк, нужную для его уничтожения. Подвижные объекты на 6 категорий по размерам. Автомобили, малые грузовики, большие грузовики, малые танки, средние танки, большие танки.
+ImpulseMinimumLevel = 100		// Определяет минимальную силу удара об танк, нужную для его повреждения. Для пушек снижено что бы их можно было давить.
+
+GUIHealthMessage=28		// Параметр, определяющий то, какое техночат-сообщение будет для данного бота
+//  1 - Vehicle Driver
+//  4 - Vehicle Commander
+//  7 - Vehicle Gunner
+// 10 - Vehicle Machinegunner
+// 13 - Vehicle Radioman
+// 16 - Vehicle Loader
+// 19 - Vehicle Plugman
+// 22 - Airplane Pilot
+// 25 - Airplane Commander
+// 28 - Airplane Co-Pilot
+// 31 - Airplane Navigator
+// 34 - Airplane Radioman
+// 37 - Airplane Gunner
+// 40 - Airplane Waist Gunner

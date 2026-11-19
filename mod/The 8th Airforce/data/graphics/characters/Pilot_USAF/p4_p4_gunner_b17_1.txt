@@ -1,0 +1,37 @@
+lod="graphics/characters/Pilot_USAF/10_p4_p4_gunner_b17_1.mgm",35
+
+[kfgroup=a20b]
+	keyframes="graphics\Characters\Keyframes\A20B\Pilot2_A20B.mkf","graphics\Characters\Keyframes\A20B\Pilot2_A20B.ckf"
+	keyframes="graphics\Characters\Keyframes\A20B\Pilot2_A20OnField.mkf","graphics\Characters\Keyframes\A20B\Pilot2_A20OnField.ckf"
+	keyframes="graphics\Characters\Keyframes\A20B\Gunner_A20B_Btm.mkf","graphics\Characters\Keyframes\A20B\Gunner_A20B_Btm.ckf"
+	keyframes="graphics\Characters\Keyframes\A20B\Gunner_A20B_Top.mkf","graphics\Characters\Keyframes\A20B\Gunner_A20B_Top.ckf"
+	keyframes="graphics\Characters\Keyframes\B25D\CharB25DOnField.mkf","graphics\Characters\Keyframes\B25D\CharB25DOnField.ckf"
+[end]
+[kfgroup=b25d]
+	keyframes="graphics\Characters\Keyframes\B25D\Gunner_B25D_Front.MKF","graphics\Characters\Keyframes\B25D\Gunner_B25D_Front.ckf"
+	keyframes="graphics\Characters\Keyframes\B25D\Gunner_B25D_Bottom.MKF","graphics\Characters\Keyframes\B25D\Gunner_B25D_Bottom.ckf"
+	keyframes="graphics\Characters\Keyframes\B25D\Gunner_B25D_Top.MKF","graphics\Characters\Keyframes\B25D\Gunner_B25D_Top.ckf"
+	keyframes="graphics\Characters\Keyframes\B25D\CharB25DOnField.mkf","graphics\Characters\Keyframes\B25D\CharB25DOnField.ckf"
+[end]
+[kfgroup=b26]
+	keyframes="graphics\Characters\Keyframes\B26\Gunner_B26_Fwd.mkf","graphics\Characters\Keyframes\B26\Gunner_B26_Fwd.ckf"
+	keyframes="graphics\Characters\Keyframes\B26\Gunner_B26_Top.mkf","graphics\Characters\Keyframes\B26\Gunner_B26_Top.ckf"
+	keyframes="graphics\Characters\Keyframes\B26\Gunner_B26_Rear.mkf","graphics\Characters\Keyframes\B26\Gunner_B26_Rear.ckf"
+	keyframes="graphics\Characters\Keyframes\B26\Gunner_B26_Lft.mkf","graphics\Characters\Keyframes\B26\Gunner_B26_Lft.ckf"
+	keyframes="graphics\Characters\Keyframes\B26\Gunner_B26_Rgt.mkf","graphics\Characters\Keyframes\B26\Gunner_B26_Rgt.ckf"
+	keyframes="graphics\Characters\Keyframes\B25D\CharB25DOnField.mkf","graphics\Characters\Keyframes\B25D\CharB25DOnField.ckf"
+[end]
+[kfgroup=c47a]
+	keyframes="graphics\Characters\Keyframes\C47A\Radist_C47A.mkf","graphics\Characters\Keyframes\C47A\Radist_C47A.ckf"
+	keyframes="graphics\Characters\Keyframes\C47A\CharC47AOnField.mkf","graphics\Characters\Keyframes\C47A\CharC47AOnField.ckf"
+[end]
+CloseSphere=0.0,0.65,0.0,0.7
+
+DefArg=-1,0.5
+DefArg=22013,0.0
+DefArg=24,1.0
+DefArg=25,1.0
+DefArg=26,0.0
+DefArg=30,0.0
+DefArg=22002,0.5
+DefArg=22003,0.5

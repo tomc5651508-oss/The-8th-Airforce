@@ -1,0 +1,228 @@
+Class_name = "CTurret"
+object_name = "P4_b17_Gun_11"
+
+[COCKPIT_LIMITS]
+x= -0.55, 0.35
+y= -0.1, 0.1
+z= -0.17, 0.17
+[END]
+
+[OPEN_COCKPIT_LIMITS]
+x= -0.55, 0.35
+y= -0.1, 0.1
+z= -0.17, 0.17
+[END]
+
+VisualImage=0,"graphics/planes/Pe2s35/10_P4_b17_Gun_11.mgm",65
+VisualImage=1,"graphics/planes/Pe2s35/P4_b17_Gun_11.mgm",false
+KeepNetworkImages=true
+
+//VisualImage=ID,model_or_effect,cast_shadows[,debris_effects]
+//ID:					INT:	0 - visible everywhere, 1 - visible inside, 2 - visible outside
+//model_or_effect:		STRING:	path to model file (mgm) of effect file (epl)
+//cast_shadows: 		BOOL/INT:	cast shadows from object or not (cast_shadows=Attr1+Attr2+...+AttrN)
+//						VIF_CASTSHADOWS=1,
+//						VIF_BLENDMASKLAST=2,
+//						VIF_ALWAYSONTOP=4,
+//						VIF_FLATAMBIENT=8,
+//						VIF_DONTCAST_COCKPIT_SHADOWS=16,
+//						VIF_GRASS_CAPSULES=32,
+//						VIF_COCKPIT_SHADOWS_OUTSIDE=64
+//[,debris_effects]:	BOOL:	optional parameter, show effects on object debris or not
+
+CollisionBody="graphics/planes/Trash/dummy.col"
+
+VisualRadius=2.0
+
+mp_site=true
+
+[attach=0]
+	position = -0.727096, -1.117117, 0.014431
+	object = "LuaScripts/WorldObjects/Bots/P4_Gunner_b17_11.txt"
+	rotation= 0.000000, 0.000000, 0.000000
+[end]
+
+[attach=1]
+	position = 0.0, 0.0, 0.0
+	object = "LuaScripts/WorldObjects/TurretRiffle.txt"
+[end]
+
+[attach=2]
+	position = 0.0, 0.0, 0.0
+	object = "LuaScripts/WorldObjects/TurretCamera.txt"
+[end]
+
+TargetingScript = "LuaScripts/WorldObjects/Ballistics/Projectiles/BULLET_GER_7-92x57_APsmk.bin"
+
+SoundScript="LuaScripts/Sound/Planes/Bf110E2_T.cfg"
+
+DropsArg=100
+HumidityArg=101
+
+SetCockpitArgs=true	// true - автоматическое выставление значений анимаций в систему сетевых команд с указанным флагом сетевой передачи, false - в самолётах это делается в коде или в случае работы объекта только на приём
+
+//CockpitArg= FetchType, CmdID, SubcmdID, ArgNum, ArgValDefault, SmoothingType, SmoothingPower, NetworkFlag
+//FetchType=-1: аргумент в объекте не забирается для анимирования
+//FetchType=-2: аргумент в объекте забирается для анимирования из самого объекта
+//FetchType=-3: аргумент в объекте забирается для анимирования по сетевым командам parent-объекта
+//FetchType>=0: аргумент в объекте забирается для анимирования по сетевым командам child-объекта с укзанным Attach ID
+//CmdID=[0..999]: ID сетевой команды низкого качества, используемой для передачи значения.
+//CmdID=[1000..1999]: ID сетевой команды среднего качества, используемой для передачи значения.
+//SubcmdID=[0..3]: ID сетевой подкоманды команды низкого качества.
+//SubcmdID=[0..1]: ID сетевой подкоманды команды среднего качества.
+//ArgNum: номер аргумента анимации устанавливаемого в/из команды.
+//ArgValDefault: дефолтное значение аргумента анимации в случае, если команда не приходила.
+//SmoothingType: smooth_clamp - сглаживаение не-круговых анимаций
+//SmoothingType: smooth_wrap - сглаживаение круговых анимаций
+//SmoothingPower: постоянная времени сглаживания
+//NetworkFlag="": отправки команды в сеть нет и нет выставления команды в случае, если SetCockpitArgs=false
+//NetworkFlag="low_freq": отправка в сеть целиком команды, содержащей указанный аргумент в случае его изменения, не чаще низкой частоты
+//NetworkFlag="med_freq": отправка в сеть целиком команды, содержащей указанный аргумент в случае его изменения, не чаще средней частоты
+//NetworkFlag="high_freq": отправка в сеть целиком команды, содержащей указанный аргумент в случае его изменения, не чаще высокой частоты
+//NetworkFlag="granted_single": отправка в сеть целиком команды, содержащей указанный аргумент в случае его изменения, с применением гарантированного пакета состояния
+
+CockpitArg = -3, 0500, 2, 22062, 0.0, "smooth_clamp", 0.0, "" // Повреждения/скрытие фонаря турели
+
+CockpitArg = -3, 0434, 0, 06009, 0.0, "smooth_clamp", 0.2, "" // Индикатор кислородного потока ("Бленкер")
+CockpitArg = -3, 0434, 1, 06010, 0.0, "smooth_clamp", 0.2, "" // Манометр кислородного прибора
+CockpitArg = -3, 0434, 3, 06012, 0.0, "smooth_clamp", 0.2, "" // Кран подачи кислорода
+
+CockpitArg = -2, 0000, 0, 9019, 0.0, "smooth_clamp", 0.0, "granted_single" // Отображение магазинов на сетевом фантоме
+CockpitArg = -2, 0001, 0, 9018, 0.0, "smooth_clamp", 0.5, "med_freq" // Отображение перезарядки на сетевом фантоме
+
+
+[TurretsPos=0]
+    position=0,0,0
+    PosMoveArg=21000
+    defaultturretpos=true
+    ReloadDelay=0.3
+    BotRotaionValueZ=0
+    LegsParameter=0
+    BotMinFirstAngle=-90
+    BotMaxFirstAngle=90
+    BotMinSecondAngle=-90
+    BotMaxSecondAngle=90
+    FirstToSecondInterp=0
+    BotAnimatorIndex=0
+    LockTurretCamera=false
+    [Joint=0]
+        SectorAngleMin=-40.0
+        SectorAngleMax=40.0
+        DefaultPos=0.5
+        AngularSpeed=120
+        AnimationArgMin=0.3888888888888889
+        AnimationArgMax=0.6111111111111112
+        AnimationArgNum=21006
+        Point=-0.016885, -0.020492, 0.000000
+        Axis=0,1,0
+        SoundNumber=1
+    [end]
+    [Joint=1]
+        SectorAngleMin=-50.62716912730451
+        SectorAngleMax=20.0
+        DefaultPos=0.0
+        AngularSpeed=120
+        AnimationArgMin=0.35936897464637635
+        AnimationArgMax=0.5555555555555556
+        AnimationArgNum=21007
+        Point=0,0,0
+        Axis=0,0,1
+        SoundNumber=2
+        NoMoveFar=true
+    [end]
+    [GunAnimation=0]
+        FireArg=9013
+    [end]
+    FireLightArg=60220
+    relativeBotStand=0,0,0
+    relativeBotSit=0,0,0
+    relativeBotDead=0,0,0
+    TransitionStandPower=1
+    TransitionDeadPower=1
+    BotAttachJointId=0
+    BotFirstAnimJointId=1
+    BotSecondAnimJointId=0
+    SightPosition=-0.727096, -0.397117, 0.014431
+    defaultDirection=0.634364, 0.773034, -0.000000
+    AimSector=-40.0,40.0,-20.0,30.0
+    CamDisplacement=-0.727096, -0.397117, 0.014431
+[end]
+
+[TurretsGun=0]
+	LinkedTurretPos = 0
+//	Convex = "gun0"
+	DGroup="MachineGun"
+	DamageProp = 0.25
+
+	Displacement = 0.455239, 0.554753, -0.000000
+	GunsightPosition = -0.727096, -0.397117, 0.014431
+	ParallaxDistance = 400.0
+
+	GunType="LuaScripts/WorldObjects/Weapons/MG_USA_M2-50.txt"
+
+	ReLoadingStagesTime = 1.0, 3.0, 1.0, 0.3
+ 
+	ReservedMagazinesArgIdx = 0
+	FlashAnimationArgIdx = 9013
+	TriggerPositionArgIdx = 9001
+	RoundsInMagazineArgIdx = 9011
+	AmmunitionMovingArgIdx = 0			// not used
+	HideAmmunitionArgIdx = 0			// not used
+	ReLoadingArgIdx = 0
+	AzimuthDeviationArgIdx = 9006
+	ElevationDeviationArgIdx = 9007
+	FiringPinPositionArgIdx = 9003
+	DrawAnimationArgIdx = 0, 9005
+
+	BarrelTemperatureDecreaseCorrectionData = 1.0, 4.0, 300.0 // Закон охлаждения стрелкового оружия в зависимости от скоростного напора:
+	// первое число - коэффициент коррекции коэффициента уменьшения температуры ствола стрелкового оружия, [безразм.], (>=0), default = 1
+	// второе число - коэффициент коррекции коэффициента уменьшения температуры ствола стрелкового оружия, при скорости обтекания стрелкового оружия воздушным потоком, заданной третьим числом, [безразм.], (>= первое число), по умолчанию: 1.0
+	// третье число - скорость обтекания стрелкового оружия воздушным потоком, при которой во втором числе задан коэффициент коррекции коэффициента уменьшения температуры ствола стрелкового оружия, [км/ч], (>=0), по умолчанию: 0.0
+
+	CarriageAdditionalBulletDispertionAngle = 0.0252, 0.0706 // Добавочные углы рассеивания пуль (снарядов) относительно оси ствола стрелкового оружия, обусловленные особенностями конструкции лафета стрелкового оружия:
+	// первое число - добавочный угол рассеивания при первом выстреле в очереди, [°], (>=0)
+	// второе число - добавочный угол рассеивания при втором и последующих выстрелах в очереди, [°], (>= первое число)
+
+	NumOfAnimations = 4
+
+//	BushCoord = -0.114461, 0.0436303, -0.0287316
+//	BushSpeed = 0.944, -0.096, -0.316
+
+//	BushConfig = "LuaScripts/WorldObjects/Trash/Batch_case07-08mm.txt"
+
+	SoundNumber = 1
+[end]
+
+[Ammunition0]
+    GunAmmunition0=0
+[end]
+[GunAmmunition0]
+	MaxRoundsInMagazine = 500
+	RoundsInMagazine = 500
+	MaxReservedMagazines = 0
+	ReservedMagazines = 0
+	MaxMisFiresInMagazine = 0
+	AmountRoundsWithOneTracer = 4
+	ParallaxConfig="LuaScripts/WorldObjects/Ballistics/Projectiles/BULLET_USA_12-7x99_AP.bin"
+	BulletConfig = "LuaScripts/WorldObjects/Ballistics/Projectiles/BULLET_USA_12-7x99_AP.txt"
+[end]
+SightPos=-0.727096, -0.397117, 0.014431
+PositionChangeTime=1
+StandDuration=1
+SitDuration=1
+PreEjectDuration=1
+[Entrance]
+    EntrancePos=-0.727096, -1.617117, 0.014431
+    EntranceRot=0,0,0
+    JumpDir=0,8,-1
+[end]
+EjectOnlyAfterPreviousGunner=false
+CockpitSafetyRate=0.35
+SphereHitProtection=0
+NoAimingWhenOpened=false
+AttackDistance=1500
+AttackDistanceTrgGnd=1500
+AttackDistanceTrgAir=1200
+AIStartAimErrModifier=0.1
+AIAimDelayModifier=0.1
+ReArmTime=15
