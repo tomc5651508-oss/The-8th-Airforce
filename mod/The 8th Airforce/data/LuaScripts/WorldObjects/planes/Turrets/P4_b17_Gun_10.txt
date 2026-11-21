@@ -37,7 +37,7 @@ VisualRadius=2.0
 mp_site=true
 
 [attach=0]
-	position = 1.377897, 0.857687, -0.097411
+	position = -1.377897, 0.857687, 0.097411
 	object = "LuaScripts/WorldObjects/Bots/P4_Gunner_b17_10.txt"
 	rotation= 0.000000, 180.000000, 0.000000
 [end]
@@ -106,6 +106,18 @@ CockpitArg = -2, 0001, 0, 9018, 0.0, "smooth_clamp", 0.5, "med_freq" // Отображе
     BotAnimatorIndex=0
     LockTurretCamera=false
     [Joint=0]
+        SectorAngleMin=-0.001
+        SectorAngleMax=0.001
+        DefaultPos=0.5
+        AngularSpeed=120
+        AnimationArgMin=0.5
+        AnimationArgMax=0.5
+        AnimationArgNum=20
+        Point=0,0,0
+        Axis=0,1,0
+        SoundNumber=1
+    [end]
+    [Joint=1]
         SectorAngleMin=-30.0
         SectorAngleMax=30.0
         DefaultPos=0.5
@@ -117,7 +129,7 @@ CockpitArg = -2, 0001, 0, 9018, 0.0, "smooth_clamp", 0.5, "med_freq" // Отображе
         Axis=0,1,0
         SoundNumber=1
     [end]
-    [Joint=1]
+    [Joint=2]
         SectorAngleMin=-30.0
         SectorAngleMax=30.0
         DefaultPos=0.49152740967843994
@@ -143,7 +155,7 @@ CockpitArg = -2, 0001, 0, 9018, 0.0, "smooth_clamp", 0.5, "med_freq" // Отображе
     TransitionStandPower=1
     TransitionDeadPower=1
     BotAttachJointId=0
-    BotFirstAnimJointId=1
+    BotFirstAnimJointId=0
     BotSecondAnimJointId=0
     SightPosition=-0.784936, 0.475552, 0.102722
     defaultDirection=0.999961, 0.008872, 0.000000

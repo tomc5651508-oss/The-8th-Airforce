@@ -1,4 +1,4 @@
-The 8th Airforce 1.3 - B-17E squadron for the Normandy and Bodenplatte careers
+The 8th Airforce 1.4 - B-17E squadron for the Normandy and Bodenplatte careers
 =====================================================================================
 
 PRIVATE BUILD. The B-17E exterior, cockpit, turret guns, crew seating and skins are the Jungle Hawks WT build
@@ -8,8 +8,8 @@ WHAT IT DOES
 - Replaces the Pe-2 ser.35 with the Jungle Hawks B-17E Flying Fortress (same swap as Jungle Hawks 2.5 WT):
   exterior, cockpit, 7 gun stations with crew, US bomb loads (AN-M57 / M64 / M65 on the FAB slots), skins,
   menu names, flight model figures (jhfm: 22,000 kg, R-1820-65 x4 thrust table).
-  1.3: waist (left, right) and tail gunner figures moved inside the airframe (bot offset x and z negated:
-  the bot rotation 0,180,0 also turns the offset).
+  1.4: all 7 gunners placed at their stations and locked (fixed joint 0); only the guns turn. The 1.3 waist and
+  tail position change is reverted (its rule was wrong).
 - Adds the AI squadron "324th Bombardment Squadron" (id 103801, country USA) to two careers:
   Normandy (scg 22):    West Malling 15.04.1944 - 21.07.1944, Ibsley 22.07.1944 - 22.08.1944
   Bodenplatte (scg 18): Chievres 08.10.1944 - 01.04.1945

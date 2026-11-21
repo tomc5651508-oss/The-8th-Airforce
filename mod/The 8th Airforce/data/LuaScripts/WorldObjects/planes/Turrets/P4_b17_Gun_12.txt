@@ -37,7 +37,7 @@ VisualRadius=2.0
 mp_site=true
 
 [attach=0]
-	position = -0.517150, -1.359432, 0.003001
+	position = 0.517150, -1.359432, -0.003001
 	object = "LuaScripts/WorldObjects/Bots/P4_Gunner_b17_12.txt"
 	rotation= 0.000000, 180.000000, 0.000000
 [end]
@@ -152,8 +152,8 @@ CockpitArg = -2, 0001, 0, 9018, 0.0, "smooth_clamp", 0.5, "med_freq" // Отображе
     TransitionStandPower=1
     TransitionDeadPower=1
     BotAttachJointId=0
-    BotFirstAnimJointId=1
-    BotSecondAnimJointId=2
+    BotFirstAnimJointId=0
+    BotSecondAnimJointId=0
     SightPosition=-0.508453009, 0.259917828, 0.019858642
     defaultDirection=1.000000000, -0.000000009, -0.000000000
     AimSector=-50.0,50.0,-20.0,30.0
