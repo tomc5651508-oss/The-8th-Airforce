@@ -38,7 +38,7 @@ VisualRadius=2.0
 mp_site=true
 
 [attach=0]
-	position = 1.365154, 0.857687, 0.210815
+	position = 1.094450, 0.831687, -0.020444
 	object = "LuaScripts/WorldObjects/Bots/P4_Gunner_b17_10.txt"
 	rotation= 0.000000, -167.177578, 0.000000
 [end]
@@ -101,8 +101,8 @@ CockpitArg = -2, 0001, 0, 9018, 0.0, "smooth_clamp", 0.5, "med_freq" // Отображе
     LegsParameter=0
     BotMinFirstAngle=-90
     BotMaxFirstAngle=90
-    BotMinSecondAngle=-90
-    BotMaxSecondAngle=90
+    BotMinSecondAngle=-90.5084
+    BotMaxSecondAngle=89.4916
     FirstToSecondInterp=0
     BotAnimatorIndex=0
     LockTurretCamera=false

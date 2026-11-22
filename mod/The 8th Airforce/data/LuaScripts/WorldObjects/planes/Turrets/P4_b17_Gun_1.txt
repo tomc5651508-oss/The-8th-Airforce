@@ -1,6 +1,6 @@
 Class_name = "CTurret"
 object_name = "P4_b17_Gun_1"
-// b17_gunner_align_1122: bot on fixed joint 0, aim pose from gun joints (stock He 111 / B-26 side gunner layout); [attach=0] solved for: bot origin = attach + offset @ transposed yaw(own + joint 0 + plane attach)
+// b17_gunner_align_1122: bot on the turret yaw joint (turns with the turret, stock B-25 top turret layout), faces along the guns; [attach=0] solved for: bot origin = attach + offset @ transposed yaw(own + joint 0 + plane attach)
 
 [COCKPIT_LIMITS]
 x= -0.55, 0.35
@@ -38,9 +38,9 @@ VisualRadius=2.0
 mp_site=true
 
 [attach=0]
-	position = -0.250690, -0.403150, 0.090830
+	position = 0.044797, -0.394281, -0.098982
 	object = "LuaScripts/WorldObjects/Bots/P4_Gunner_b17_1.txt"
-	rotation= 0.000000, 33.628246, 0.000000
+	rotation= 0.000000, -146.371754, 0.000000
 [end]
 
 [attach=1]
@@ -101,8 +101,8 @@ CockpitArg = -2, 0001, 0, 9018, 0.0, "smooth_clamp", 0.5, "med_freq" // Отображе
     LegsParameter=0
     BotMinFirstAngle=-90
     BotMaxFirstAngle=90
-    BotMinSecondAngle=-90
-    BotMaxSecondAngle=90
+    BotMinSecondAngle=-90.4897
+    BotMaxSecondAngle=89.5103
     FirstToSecondInterp=0
     BotAnimatorIndex=0
     LockTurretCamera=false
@@ -155,7 +155,7 @@ CockpitArg = -2, 0001, 0, 9018, 0.0, "smooth_clamp", 0.5, "med_freq" // Отображе
     relativeBotDead=0,0,0
     TransitionStandPower=1
     TransitionDeadPower=1
-    BotAttachJointId=0
+    BotAttachJointId=1
     BotFirstAnimJointId=1
     BotSecondAnimJointId=2
     SightPosition=-0.250690, -0.203150, 0.090830

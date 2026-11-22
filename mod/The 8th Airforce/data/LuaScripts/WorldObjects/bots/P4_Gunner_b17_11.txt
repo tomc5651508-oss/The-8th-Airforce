@@ -11,12 +11,12 @@ Controller="LuaScripts/WorldObjects/Bots/BotController_AI.txt"
 
 VisualImage=2,"graphics/characters/Pilot_USAF/p4_p4_gunner_b17_11.mgm",true
 CollisionBody="graphics/characters/Pilot_USAF/PilotUSAF_bomb_crew_su.col"
-Animator="graphics/characters/Keyframes/B25D/Gunner_B25D_Front.chr","GOT_VEHICLE_TURRET"
+Animator="graphics/characters/Keyframes/B26/JH_B17_Radio.chr","GOT_VEHICLE_TURRET"
 Animator="graphics/characters/Keyframes/B25D/CharB25DOnField.chr","GOT_NONE"
-kfgroup="b25d"	//Name of used group of keyframes in .txt of .MGM model of the character
+kfgroup="b26"	//Name of used group of keyframes in .txt of .MGM model of the character
 
 [attach=0]
-	position= 0, 0.72, 0
+	position= 0.027700, 1.421500, -0.000300
 	object = "LuaScripts/WorldObjects/Bots/BotHead.txt"
 [end]
 

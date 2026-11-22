@@ -1,0 +1,68 @@
+// JH 2.5 WT: Gunner_B25D_Front rig, arms re-posed onto the B-17 gun grips of P4_b17_Gun_9 (b17_gunner_align_1122 build_arms.py)
+model="Pilot_Brit_su.MGM"
+keyframes="graphics\Characters\Keyframes\B25D\JH_B17_Nose.mkf"
+
+FramesCount=840
+
+FPS=30
+
+//	Animations while in cockpit
+
+[Animation = idle]
+	Range=0,600
+	NextAnimation="idle" 
+	Transistion=0.3
+[end]
+
+[Animation = death]
+	Range=601,680
+	NextAnimation="death_static"
+	Rename="",""	//Deny any further animation changing
+	Transistion=0.3
+[end]
+
+[Animation = death_static]
+	Range=680,700
+	NextAnimation="death_static"
+	Rename="",""	//Deny any further animation changing
+	Transistion=0.3
+[end]
+
+[Animation = sit_knockout]
+	Range=695,700
+	NextAnimation="sit_knockout"
+	Transistion=1.0
+[end]
+
+//	Leaving, primary way
+
+[Animation = leave] //Whole animation is 701,840, delay before detach = 23 frames
+	Range=701,840
+	NextAnimation="leaveCycle"
+	Transistion=0.3
+[end]
+
+[Animation = leaveCycle]
+	Range=839,840
+	NextAnimation="leaveCycle"
+	Rename="death","leaveDeadCycle"
+	Transistion=0.3
+[end]
+
+[Animation = leaveDead]
+	Range=701,840
+	NextAnimation="leaveDeadCycle"
+	Transistion=0.3
+[end]
+
+[Animation = leaveDeadCycle]
+	Range=839,840
+	NextAnimation="leaveDeadCycle"
+	Transistion=0.3
+[end]
+
+
+ArgAlias=0, 1	//argNum, isAutoAnimated
+ArgAlias=22002, 0
+ArgAlias=22003, 0
+ArgAlias=13, 0	//argNum, isAutoAnimate

@@ -11,7 +11,7 @@ Controller="LuaScripts/WorldObjects/Bots/BotController_AI.txt"
 
 VisualImage=2,"graphics/characters/Pilot_USAF/p4_p4_gunner_b17_10.mgm",true
 CollisionBody="graphics/characters/Pilot_USAF/PilotUSAF_bomb_crew_su.col"
-Animator="graphics/characters/Keyframes/B25D/Gunner_B25D_Front.chr","GOT_VEHICLE_TURRET"
+Animator="graphics/characters/Keyframes/B25D/JH_B17_Tail.chr","GOT_VEHICLE_TURRET"
 Animator="graphics/characters/Keyframes/B25D/CharB25DOnField.chr","GOT_NONE"
 kfgroup="b25d"	//Name of used group of keyframes in .txt of .MGM model of the character
 CloseSphere=-0.266,-0.270,-0.027,0.7	//Overriding default model CloseSphere setting

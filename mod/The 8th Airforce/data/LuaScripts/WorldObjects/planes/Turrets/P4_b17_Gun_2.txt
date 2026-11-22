@@ -1,6 +1,6 @@
 Class_name = "CTurret"
 object_name = "P4_b17_Gun_2"
-// b17_gunner_align_1122: bot on fixed joint 0, aim pose from gun joints (stock He 111 / B-26 side gunner layout); [attach=0] solved for: bot origin = attach + offset @ transposed yaw(own + joint 0 + plane attach)
+// b17_gunner_align_1122: bot on the ball yaw joint (turns with the ball, stock enclosed-turret layout), curled JH_B17_Ball pose inside the ball, camera at his eye; [attach=0] solved for: bot origin = attach + offset @ transposed yaw(own + joint 0 + plane attach)
 
 [COCKPIT_LIMITS]
 x= -0.55, 0.35
@@ -38,7 +38,7 @@ VisualRadius=2.0
 mp_site=true
 
 [attach=0]
-	position = -0.382045, -0.150312, 0.118065
+	position = -0.127272, 0.170000, 0.044094
 	object = "LuaScripts/WorldObjects/Bots/P4_Gunner_b17_2.txt"
 	rotation= 0.000000, 38.218192, 0.000000
 [end]
@@ -101,8 +101,8 @@ CockpitArg = -2, 0001, 0, 9018, 0.0, "smooth_clamp", 0.5, "med_freq" // Отображе
     LegsParameter=0
     BotMinFirstAngle=-90
     BotMaxFirstAngle=90
-    BotMinSecondAngle=-90
-    BotMaxSecondAngle=90
+    BotMinSecondAngle=-90.4834
+    BotMaxSecondAngle=89.5166
     FirstToSecondInterp=0
     BotAnimatorIndex=0
     LockTurretCamera=false
@@ -155,13 +155,13 @@ CockpitArg = -2, 0001, 0, 9018, 0.0, "smooth_clamp", 0.5, "med_freq" // Отображе
     relativeBotDead=0,0,0
     TransitionStandPower=1
     TransitionDeadPower=1
-    BotAttachJointId=0
+    BotAttachJointId=1
     BotFirstAnimJointId=1
     BotSecondAnimJointId=2
-    SightPosition=-0.382045, 1.049688, 0.118065
+    SightPosition=0.068516, 0.477205, 0.056689
     defaultDirection=0.999964, 0.008436, 0.000000
     AimSector=-180.0,180.0,-90.0,0.0
-    CamDisplacement=-0.382045, 1.049688, 0.118065
+    CamDisplacement=0.068516, 0.477205, 0.056689
 [end]
 
 [TurretsGun=0]
@@ -171,7 +171,7 @@ CockpitArg = -2, 0001, 0, 9018, 0.0, "smooth_clamp", 0.5, "med_freq" // Отображе
 	DamageProp = 0.25
 
 	Displacement = 1.002465, 0.008457, 0.000000
-	GunsightPosition = -0.382045, 1.049688, 0.118065
+	GunsightPosition = 0.068516, 0.477205, 0.056689
 	ParallaxDistance = 400.0
 
 	GunType="LuaScripts/WorldObjects/Weapons/MG_USA_M2-50.txt"
@@ -216,7 +216,7 @@ CockpitArg = -2, 0001, 0, 9018, 0.0, "smooth_clamp", 0.5, "med_freq" // Отображе
 	DamageProp = 0.25
 
 	Displacement = 0.783739, 0.008457, -0.631318
-	GunsightPosition = -0.382045, 1.049688, 0.118065
+	GunsightPosition = 0.068516, 0.477205, 0.056689
 	ParallaxDistance = 400.0
 
 	GunType="LuaScripts/WorldObjects/Weapons/MG_USA_M2-50.txt"
@@ -278,7 +278,7 @@ CockpitArg = -2, 0001, 0, 9018, 0.0, "smooth_clamp", 0.5, "med_freq" // Отображе
 	ParallaxConfig="LuaScripts/WorldObjects/Ballistics/Projectiles/BULLET_USA_12-7x99_AP.bin"
 	BulletConfig = "LuaScripts/WorldObjects/Ballistics/Projectiles/BULLET_USA_12-7x99_AP.txt"
 [end]
-SightPos=-0.382045, 1.049688, 0.118065
+SightPos=0.068516, 0.477205, 0.056689
 PositionChangeTime=1
 StandDuration=1
 SitDuration=1

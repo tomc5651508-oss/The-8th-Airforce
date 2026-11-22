@@ -8,6 +8,7 @@ lod="graphics/characters/Pilot_USAF/10_p4_p4_gunner_b17_10.mgm",35
 	keyframes="graphics\Characters\Keyframes\B25D\CharB25DOnField.mkf","graphics\Characters\Keyframes\B25D\CharB25DOnField.ckf"
 [end]
 [kfgroup=b25d]
+	keyframes="graphics\Characters\Keyframes\B25D\JH_B17_Tail.mkf","graphics\Characters\Keyframes\B25D\JH_B17_Tail.ckf"
 	keyframes="graphics\Characters\Keyframes\B25D\Gunner_B25D_Front.MKF","graphics\Characters\Keyframes\B25D\Gunner_B25D_Front.ckf"
 	keyframes="graphics\Characters\Keyframes\B25D\Gunner_B25D_Bottom.MKF","graphics\Characters\Keyframes\B25D\Gunner_B25D_Bottom.ckf"
 	keyframes="graphics\Characters\Keyframes\B25D\Gunner_B25D_Top.MKF","graphics\Characters\Keyframes\B25D\Gunner_B25D_Top.ckf"

@@ -1,0 +1,68 @@
+// JH 2.5 WT: B-25 bottom-gunner rig re-posed curled inside the B-17 ball turret (b17_gunner_align_1122 build_ball.py)
+model="Pilot_Brit_su.MGM"
+keyframes="graphics\Characters\Keyframes\B25D\JH_B17_Ball.mkf"
+
+FramesCount=840
+
+
+FPS=30
+
+//	Animations while in cockpit
+
+[Animation = idle]
+	Range=0,100
+	NextAnimation="idle" 
+	Transistion=0.3
+[end]
+
+[Animation = death]
+	Range=101,135
+	NextAnimation="death_static"
+	Rename="",""	//Deny any further animation changing
+	Transistion=0.3
+[end]
+
+[Animation = death_static]
+	Range=135,150
+	NextAnimation="death_static"
+	Rename="",""	//Deny any further animation changing
+	Transistion=0.3
+[end]
+
+[Animation = sit_knockout]
+	Range=145,150
+	NextAnimation="sit_knockout"
+	Transistion=1.0
+[end]
+
+//	Leaving, primary way
+
+[Animation = leave] //Whole animation is 701,840, delay before detach = 23 frames
+	Range=701,840
+	NextAnimation="leaveCycle"
+	Transistion=0.3
+[end]
+
+[Animation = leaveCycle]
+	Range=839,840
+	NextAnimation="leaveCycle"
+	Rename="death","leaveDeadCycle"
+	Transistion=0.3
+[end]
+
+[Animation = leaveDead]
+	Range=701,840
+	NextAnimation="leaveDeadCycle"
+	Transistion=0.3
+[end]
+
+[Animation = leaveDeadCycle]
+	Range=839,840
+	NextAnimation="leaveDeadCycle"
+	Transistion=0.3
+[end]
+
+
+ArgAlias=0, 1	//argNum, isAutoAnimated
+ArgAlias=13, 0	//argNum, isAutoAnimate
+ArgAlias = 22016, 0
