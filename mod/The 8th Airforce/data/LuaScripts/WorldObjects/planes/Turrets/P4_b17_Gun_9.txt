@@ -1,5 +1,6 @@
 Class_name = "CTurret"
 object_name = "P4_b17_Gun_9"
+// b17_gunner_align_1122: bot on fixed joint 0, aim pose from gun joints (stock He 111 / B-26 side gunner layout); [attach=0] solved for: bot origin = attach + offset @ transposed yaw(own + joint 0 + plane attach)
 
 [COCKPIT_LIMITS]
 x= -0.55, 0.35
@@ -39,7 +40,7 @@ mp_site=true
 [attach=0]
 	position = -0.760847, -0.384734, 0.201829
 	object = "LuaScripts/WorldObjects/Bots/P4_Gunner_b17_9.txt"
-	rotation= 0.000000, 0.000000, 0.000000
+	rotation= 0.000000, -29.397818, 0.000000
 [end]
 
 [attach=1]
@@ -152,8 +153,8 @@ CockpitArg = -2, 0001, 0, 9018, 0.0, "smooth_clamp", 0.5, "med_freq" // Отображе
     TransitionStandPower=1
     TransitionDeadPower=1
     BotAttachJointId=0
-    BotFirstAnimJointId=0
-    BotSecondAnimJointId=0
+    BotFirstAnimJointId=1
+    BotSecondAnimJointId=2
     SightPosition=-0.760847, 0.335266, 0.201829
     defaultDirection=0.977924, 0.208963, -0.000000
     AimSector=-50.0,20.0,-30.0,30.0

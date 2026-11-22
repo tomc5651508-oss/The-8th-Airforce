@@ -24,7 +24,6 @@ scene_type=0
 
 
 
-
 // Tactical Code properties (The 8th Airforce: chars 0-2 tail code, char 3 = nose art)
 TacticalCodeTexture=-1,"graphics\textures\Common\TacticalCodes_8AF.dds"
 TacticalCharsNum=4
