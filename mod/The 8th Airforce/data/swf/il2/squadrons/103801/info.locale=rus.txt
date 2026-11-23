@@ -1,0 +1,6 @@
+﻿&names=date,name,shortName|
+*,"324th Bombardment Squadron","324th BS"|
+
+
+&descriptions=date,text|
+*,"324th Bombardment Squadron (DF), 91st Bomb Group, U.S. 8th Air Force. B-17E Flying Fortress (Pe-2 ser.35 slot). The 8th Air Force bases in East Anglia lie outside the career maps: in Normandy the squadron uses West Malling, then Ibsley; in Bodenplatte Chievres (airfields and dates of the stock B-26 squadrons 556th BS / 584th BS). Day bombing: troops, airfields, railway junctions, supply dumps, artillery."|

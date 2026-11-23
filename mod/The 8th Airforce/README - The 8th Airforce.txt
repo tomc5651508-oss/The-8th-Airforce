@@ -1,4 +1,4 @@
-The 8th Airforce 1.5 - B-17E squadron for the Normandy and Bodenplatte careers
+The 8th Airforce 1.6 - B-17E squadron for the Normandy and Bodenplatte careers
 =====================================================================================
 
 PRIVATE BUILD. The B-17E exterior, cockpit, turret guns, crew seating and skins are the Jungle Hawks WT build
@@ -12,12 +12,17 @@ WHAT IT DOES
   Ju 88): turret files, gunner bots, figure files and aim poses (new JH_B17 Top/Ball/Nose/Tail/Radio keyframes);
   arms and torso follow the gun. Prop blur update
   from Jungle Hawks v2.6.10 on the exterior LOD0/LOD1.
-- Adds the AI squadron "324th Bombardment Squadron" (id 103801, country USA) to two careers:
+- Adds the PLAYER squadron "324th Bombardment Squadron" (id 103801, country USA) to two careers
+  (1.6: selectable in the career squadron list; it also flies as AI in other pilots' missions):
   Normandy (scg 22):    West Malling 15.04.1944 - 21.07.1944, Ibsley 22.07.1944 - 22.08.1944
   Bodenplatte (scg 18): Chievres 08.10.1944 - 01.04.1945
   Airfields, dates and flight counts are copied from the stock B-26 squadrons 556th BS (Normandy) and
   584th BS (Bodenplatte). The 8th Air Force B-17 bases in East Anglia are outside both maps, so the
-  squadron uses these fields. AI squadron only (not a player squadron).
+  squadron uses these fields.
+  Missions (day level bombing, flights of 6 B-17E): Bomb Troops, Bomb Enemy Airfield, Bomb Railway Junction,
+  Bomb Supply Dump, Bomb Artillery (stock mission templates "day", Normandy from 06.06.1944 "dday-day").
+  1.6 ships scg\Scripts\22/18planes-to-missions.cfg and 22/18planes-effectiveness.cfg = stock + the B-17E
+  (Pe-2 ser.35) entries, and a squadron card with a drawn emblem (swf\il2\squadrons\103801).
 - B-17E engine sounds: VSM v7.5 Wright R-1820 samples in cloned copies of the Pe-2 ser.35 engine, start-up,
   starter and engine-damage events (data\Audio\MasterBank.bank = stock 20 May 2026 bank + those clones;
   every stock event unchanged).
@@ -36,8 +41,8 @@ WHAT IT DOES
 - Works without Jungle Hawks.
 
 REQUIREMENTS
-- IL-2 Great Battles with Battle of Stalingrad (the Pe-2 ser.35 host), Battle of Normandy and/or
-  Battle of Bodenplatte.
+- IL-2 Great Battles with Battle of Normandy and/or Battle of Bodenplatte, and the Pe-2 ser.35 (Battle of
+  Moscow aircraft). To fly the squadron in a career you must own the Pe-2 ser.35.
 - JSGME. The pack carries GB Mod Loader 1.5.0 (bin\game\winmm.dll + GBML.dll) with two plugins:
   planeint (mode=uniform: modified plane scripts, single player) and jhfm (B-17E figures only; every other
   aircraft keeps its stock flight model).
@@ -45,20 +50,22 @@ REQUIREMENTS
 INSTALL
 1. Copy the folder "The 8th Airforce" into <IL-2>\MODS.
 2. Enable it in JSGME.
-3. Start a NEW Normandy or Bodenplatte career. Careers started before the pack was enabled keep their
-   old squadron list.
+3. Start a NEW Normandy or Bodenplatte career, pick country USA, then the 324th Bombardment Squadron.
+   Careers started before the pack was enabled keep their old squadron list.
 Remove: disable in JSGME. Back up data\Career\cp.db before you remove the pack while a career runs.
 
 DO NOT COMBINE WITH
 - Jungle Hawks (any version): both packs write bin\game\gbml.ini, the Pe-2 ser.35 files and (JH) scg\22.
-- Other mods that change scg\22 or scg\18 squadrons2.cfg, skins.cfg, squadrons-codes.cfg or the career
-  airfield files (locations\**\*.ldfbin).
+- Other mods that change scg\22 or scg\18 squadrons.cfg, skins.cfg, squadrons-codes.cfg, the career
+  airfield files (locations\**\*.ldfbin) or scg\Scripts 22/18 planes-to-missions / planes-effectiveness.
 
 KNOWN LIMITS
 - Every Pe-2 ser.35 in the game becomes a B-17E, also in the Stalingrad, Moscow and Kuban careers and in QMB.
 - The sound bank replaces the game's MasterBank.bank (JSGME backs the original up). A game update that changes
   the stock bank needs a rebuild of this pack; other sound mods that replace MasterBank.bank conflict.
-- AI flight altitude and AI bomb loads come from the stock career rules for the Pe-2 ser.35 slot.
+- Flight altitude, bomb loads and fuel in the careers follow the Jungle Hawks B-17E rules for the Pe-2 ser.35 slot
+  (planes-to-missions entries copied from Jungle Hawks); mission profiles are the stock day-bomber templates.
+- The squadron card is new (id 103801 has no stock card); its emblem is a drawn badge, not a historical one.
 - A game update that changes the Normandy or Bodenplatte squadron files needs a rebuild of this pack.
 - Not flown in game before release of this build.
 
