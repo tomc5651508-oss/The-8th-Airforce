@@ -1,5 +1,5 @@
-The 8th Airforce 1.6 - B-17E squadron for the Normandy and Bodenplatte careers
-=====================================================================================
+The 8th Airforce 1.6.1 - B-17E squadron for the Normandy and Bodenplatte careers
+=======================================================================================
 
 PRIVATE BUILD. The B-17E exterior, cockpit, turret guns, crew seating and skins are the Jungle Hawks WT build
 parts. They contain War Thunder (Gaijin) derived assets. Do not upload or share this pack publicly.
@@ -16,6 +16,8 @@ WHAT IT DOES
   right); tail gunner seated inside forward of the guns; nose gunner head under the glass; top gunner centred
   in the ring. Hands can leave the grips when a gun swings far from rest. Prop blur update
   from Jungle Hawks v2.6.10 on the exterior LOD0/LOD1.
+  1.6.1: all four prop blur disks shown (blur vertices of engines 1, 3 and 4 were drawn on the bones of
+  engines 2 and 1; now each engine's own).
 - Adds the PLAYER squadron "324th Bombardment Squadron" (id 103801, country USA) to two careers
   (1.6: selectable in the career squadron list; it also flies as AI in other pilots' missions):
   Normandy (scg 22):    West Malling 15.04.1944 - 21.07.1944, Ibsley 22.07.1944 - 22.08.1944
