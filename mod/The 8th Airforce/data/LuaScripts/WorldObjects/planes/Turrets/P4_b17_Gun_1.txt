@@ -1,6 +1,6 @@
 Class_name = "CTurret"
 object_name = "P4_b17_Gun_1"
-// b17_gunner_align_1122: bot on the turret yaw joint (turns with the turret, stock B-25 top turret layout), faces along the guns; [attach=0] solved for: bot origin = attach + offset @ transposed yaw(own + joint 0 + plane attach)
+// JhCREW 23 Nov: top gunner moved 0.25 m toward the cockpit, 0.08 m down and centred so his body stays inside the turret ring and dome
 
 [COCKPIT_LIMITS]
 x= -0.55, 0.35
@@ -38,7 +38,7 @@ VisualRadius=2.0
 mp_site=true
 
 [attach=0]
-	position = 0.044797, -0.394281, -0.098982
+	position = -0.211871, -0.474281, -0.113864
 	object = "LuaScripts/WorldObjects/Bots/P4_Gunner_b17_1.txt"
 	rotation= 0.000000, -146.371754, 0.000000
 [end]

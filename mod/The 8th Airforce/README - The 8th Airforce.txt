@@ -10,7 +10,11 @@ WHAT IT DOES
   menu names, flight model figures (jhfm: 22,000 kg, R-1820-65 x4 thrust table).
   1.5: all gunner stations re-aligned to the stock gunner convention (calibrated on stock B-26, He 111, Li-2,
   Ju 88): turret files, gunner bots, figure files and aim poses (new JH_B17 Top/Ball/Nose/Tail/Radio keyframes);
-  arms and torso follow the gun. Prop blur update
+  arms and torso follow the gun.
+  1.6: crew inside the fuselage (JhCREW 23 Nov): waist, radio and ball gunner bodies no longer slide out with
+  the sit/aim animation (body tracks hold the rest pose); waist gunners face their windows (left = mirror of
+  right); tail gunner seated inside forward of the guns; nose gunner head under the glass; top gunner centred
+  in the ring. Hands can leave the grips when a gun swings far from rest. Prop blur update
   from Jungle Hawks v2.6.10 on the exterior LOD0/LOD1.
 - Adds the PLAYER squadron "324th Bombardment Squadron" (id 103801, country USA) to two careers
   (1.6: selectable in the career squadron list; it also flies as AI in other pilots' missions):

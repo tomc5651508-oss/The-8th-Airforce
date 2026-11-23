@@ -1,6 +1,6 @@
 Class_name = "CTurret"
 object_name = "P4_b17_Gun_12"
-// b17_gunner_align_1122: bot on fixed joint 0, aim pose from gun joints (stock He 111 / B-26 side gunner layout); [attach=0] solved for: bot origin = attach + offset @ transposed yaw(own + joint 0 + plane attach)
+// JhCREW 23 Nov: waist gunner R stands at the station (body locked by the JhCREW rig: no B-26 sit/aim body slide), faces his window (rotation 0), port = mirror of starboard
 
 [COCKPIT_LIMITS]
 x= -0.55, 0.35
@@ -40,7 +40,7 @@ mp_site=true
 [attach=0]
 	position = -0.517150, -1.359432, 0.003001
 	object = "LuaScripts/WorldObjects/Bots/P4_Gunner_b17_12.txt"
-	rotation= 0.000000, 180.000000, 0.000000
+	rotation= 0.000000, 0.000000, 0.000000
 [end]
 
 [attach=1]
