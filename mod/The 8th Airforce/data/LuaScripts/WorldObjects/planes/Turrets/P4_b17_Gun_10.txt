@@ -1,6 +1,6 @@
 Class_name = "CTurret"
 object_name = "P4_b17_Gun_10"
-// JhCREW 23 Nov: tail gunner seated (B-25 front-gunner idle) inside the tail, forward of the guns, head at the sight, facing aft; offset rotated by plane-attach yaw only (same as guns/cameras)
+// B17CREW 24 Nov: tail gunner kneels inside the tail facing aft, head at the turret camera; the game adds arg tracks as deltas on the arg-0 pose (aim tracks = identity at rest), offset turned by the plane-attach yaw only
 
 [COCKPIT_LIMITS]
 x= -0.55, 0.35
@@ -38,9 +38,9 @@ VisualRadius=2.0
 mp_site=true
 
 [attach=0]
-	position = -0.545488, -0.536070, -0.068592
+	position = -1.201593, 0.775951, -0.152125
 	object = "LuaScripts/WorldObjects/Bots/P4_Gunner_b17_10.txt"
-	rotation= 0.000000, 6.411211, 0.000000
+	rotation= 0.000000, -173.588789, 0.000000
 [end]
 
 [attach=1]

@@ -1,4 +1,4 @@
-The 8th Airforce 1.6.1 - B-17E squadron for the Normandy and Bodenplatte careers
+The 8th Airforce 1.6.2 - B-17E squadron for the Normandy and Bodenplatte careers
 =======================================================================================
 
 PRIVATE BUILD. The B-17E exterior, cockpit, turret guns, crew seating and skins are the Jungle Hawks WT build
@@ -18,6 +18,8 @@ WHAT IT DOES
   from Jungle Hawks v2.6.10 on the exterior LOD0/LOD1.
   1.6.1: all four prop blur disks shown (blur vertices of engines 1, 3 and 4 were drawn on the bones of
   engines 2 and 1; now each engine's own).
+  1.6.2: tail and ball gunners inside the fuselage. Same two crew files as Jungle Hawks v2.6.17
+  (JH_B17_Ball.mkf: body track held at the arg-0 pose; P4_b17_Gun_10.txt: tail gunner position and facing).
 - Adds the PLAYER squadron "324th Bombardment Squadron" (id 103801, country USA) to two careers
   (1.6: selectable in the career squadron list; it also flies as AI in other pilots' missions):
   Normandy (scg 22):    West Malling 15.04.1944 - 21.07.1944, Ibsley 22.07.1944 - 22.08.1944

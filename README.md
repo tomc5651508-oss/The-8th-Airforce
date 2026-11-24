@@ -6,6 +6,7 @@ B-17E Flying Fortress squadron for the IL-2 Great Battles Normandy and Bodenplat
 - Player squadron "324th Bombardment Squadron" (USA, plain olive-drab skin) in both careers: Normandy (West Malling, then Ibsley) and Bodenplatte (Chievres). Pick it in a new career (country USA); it needs the Pe-2 ser.35 (Battle of Moscow) in your account. Day level-bombing missions with stock templates, flights of 6 B-17E.
 - 1.6 crew fix: all B-17 gunners sit inside the fuselage. Waist, radio and ball gunners no longer slide out of the aircraft with their animation, waist gunners face their windows, tail gunner sits inside behind his guns, nose gunner's head stays under the glass, top gunner is centred in his ring.
 - 1.6.1: all four prop blur disks shown (before: only the two on one wing).
+- 1.6.2: tail and ball gunners sit inside the fuselage (same crew files as Jungle Hawks v2.6.17).
 - B-17E engine sounds (VSM v7.5 Wright R-1820) in a copy of the stock sound bank.
 - 22 nose art pictures as the 4th tactical-code character on both nose sides.
 
