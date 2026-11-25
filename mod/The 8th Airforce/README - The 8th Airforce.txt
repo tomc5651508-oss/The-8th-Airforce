@@ -1,4 +1,4 @@
-The 8th Airforce 1.6.2 - B-17E squadron for the Normandy and Bodenplatte careers
+The 8th Airforce 1.6.3 - B-17E squadron for the Normandy and Bodenplatte careers
 =======================================================================================
 
 PRIVATE BUILD. The B-17E exterior, cockpit, turret guns, crew seating and skins are the Jungle Hawks WT build
@@ -20,6 +20,9 @@ WHAT IT DOES
   engines 2 and 1; now each engine's own).
   1.6.2: tail and ball gunners inside the fuselage. Same two crew files as Jungle Hawks v2.6.17
   (JH_B17_Ball.mkf: body track held at the arg-0 pose; P4_b17_Gun_10.txt: tail gunner position and facing).
+  1.6.3: updated for the IL-2 game update of 25 Nov 2026 (game build 20261124): GB Mod Loader 1.6.0 (Dusty's fix,
+  GBML.dll + winmm.dll, the same files as Jungle Hawks v2.6.19), jhfm and planeint rebuilt for the new build.
+  The 1.6.2 loader and plugins refuse to start on the new game build.
 - Adds the PLAYER squadron "324th Bombardment Squadron" (id 103801, country USA) to two careers
   (1.6: selectable in the career squadron list; it also flies as AI in other pilots' missions):
   Normandy (scg 22):    West Malling 15.04.1944 - 21.07.1944, Ibsley 22.07.1944 - 22.08.1944
@@ -51,7 +54,7 @@ WHAT IT DOES
 REQUIREMENTS
 - IL-2 Great Battles with Battle of Normandy and/or Battle of Bodenplatte, and the Pe-2 ser.35 (Battle of
   Moscow aircraft). To fly the squadron in a career you must own the Pe-2 ser.35.
-- JSGME. The pack carries GB Mod Loader 1.5.0 (bin\game\winmm.dll + GBML.dll) with two plugins:
+- JSGME. The pack carries GB Mod Loader 1.6.0 (bin\game\winmm.dll + GBML.dll, for game build 20261124) with two plugins:
   planeint (mode=uniform: modified plane scripts, single player) and jhfm (B-17E figures only; every other
   aircraft keeps its stock flight model).
 

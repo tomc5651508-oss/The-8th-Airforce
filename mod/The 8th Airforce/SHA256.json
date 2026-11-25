@@ -1,12 +1,12 @@
 {
- "bin/game/gbml/jhfm.dll": "5df9bfae6e893cdb9b263e000215bdfa8484887176c0b502d774c5983f1a9e52",
+ "bin/game/gbml/jhfm.dll": "f2eca8ede1022b45215ab38c59bf6d8e208bcf377a46a420d4b5788e49b34b80",
  "bin/game/gbml/jhfm.ini": "2bd20e6fa071f0cb118e7f4c90572e2fda68caa003feb5c5f657cf99cf758b56",
- "bin/game/gbml/planeint.dll": "b6e14e435109e9b66547e252a773245afe532085efeecd22f2005a46f49aa44f",
+ "bin/game/gbml/planeint.dll": "3412fe618534c533efad51b62b4ba1bd1a59790a8976f797785cd121de92d290",
  "bin/game/gbml/planeint.ini": "e923e328d3a03a54c2c9966ff75a6dc9e5e1cdb4d34378fb823f98386b69ae8f",
- "bin/game/GBML.dll": "7105f55f02cf15f3adc6bb9f6fd7fe9d6ad1d18f3db714a1b750e4bf45999591",
+ "bin/game/GBML.dll": "4a8d1b7c76a618badc42efd82fe3639c0dd86d5b9b1c07e43951225e6c432b9d",
  "bin/game/gbml.ini": "f841de82ae64c1c4ed9624b51bfcfa6e88c27fa300818da47fc8c7bece66225c",
- "bin/game/winmm.dll": "1b1a8f699c1fd6f9f05c72980873659afbbfd3e13d83e4b2d0896601aa17689d",
- "CREDITS.txt": "925d9e66cb1924a81caa7f522a6213e5097ad8ada50ec9600ebdd9165bd3d238",
+ "bin/game/winmm.dll": "1b3905cc208c3b7f8cd04072e6d636c32781b4b5e75237bc17de38fafc5ca39a",
+ "CREDITS.txt": "791b28ff69f8055405162ca7e3868d1365ff2bad1639331ccb454949198cd5c1",
  "data/Audio/MasterBank.bank": "3e53f2f5da1e9e0d898720356cbf729beee8fb9fe9b5b237d0ec32a41d7c7e7f",
  "data/graphics/Ammo/jh_bomb_anm57.mgm": "6f6ee72ba4c214698d021f0dff257b227c6db7aaea3037926a5feae2c1b0eb40",
  "data/graphics/characters/Keyframes/B25D/JH_B17_Ball.chr": "027755d4d779463520e8d11a1cf4b84a0798ffbf26efc3c1a5c6d67ed9d25e6c",
@@ -608,5 +608,5 @@
  "data/swf/il2/worldobjects/planes/pe2s35/skins/pe2s35_skin_07.dds": "df164a565339bd778de8b1b7e7c44e5ca8d10df3149529cf64ed89e5568520c7",
  "data/swf/il2/worldobjects/planes/pe2s35/skins/pe2s35_skin_08.dds": "df164a565339bd778de8b1b7e7c44e5ca8d10df3149529cf64ed89e5568520c7",
  "data/swf/il2/worldobjects/planes/pe2s35/skins/pe2s35_skin_09.dds": "df164a565339bd778de8b1b7e7c44e5ca8d10df3149529cf64ed89e5568520c7",
- "README - The 8th Airforce.txt": "0151d7644bd10219c10392db0c56684f4e13f8dca2e5f7cfb89471ebe15aff7d"
+ "README - The 8th Airforce.txt": "e8f01bceb258075c24b05b5aecc6c85e9c6e380f2ded7c634e81e9bceab93c67"
 }

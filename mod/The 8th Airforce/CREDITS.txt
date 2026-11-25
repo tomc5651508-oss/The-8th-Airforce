@@ -7,5 +7,5 @@ CREDITS - The 8th Airforce
 - Engine sounds: VSM Sound Mod v7.5 (IL-2 1946) samples.
 - Nose art pictures: B-17 Flying Fortress: The Mighty 8th Redux (David Lagettie, Ken Hall, Chris Bates-Keegan,
   Eduardo Garcia, Ben Bastian, Shane Gavin).
-- GB Mod Loader 1.5.0 and the planeint plugin base (scriptcrc): Dusty. Redistributed with Dusty's permission.
+- GB Mod Loader 1.6.0 and the planeint plugin base (scriptcrc): Dusty. Redistributed with Dusty's permission.
 - jhfm (fork of Dusty's fmfix), crew seating, career squadron: Pingu / Jungle Hawks.

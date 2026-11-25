@@ -20,3 +20,5 @@ A git clone needs Git LFS (`MasterBank.bank`, 111 MB, is stored with LFS).
 
 Do not enable together with Jungle Hawks. Every Pe-2 ser.35 in the game becomes a B-17E.
 Full notes: `The 8th Airforce\README - The 8th Airforce.txt`. Credits: `NOTICE.txt`.
+
+1.6.3: updated for the IL-2 game update of 25 Nov 2026 (build 20261124): GB Mod Loader 1.6.0, jhfm and planeint rebuilt.
