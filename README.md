@@ -22,3 +22,5 @@ Do not enable together with Jungle Hawks. Every Pe-2 ser.35 in the game becomes 
 Full notes: `The 8th Airforce\README - The 8th Airforce.txt`. Credits: `NOTICE.txt`.
 
 1.6.3: updated for the IL-2 game update of 25 Nov 2026 (build 20261124): GB Mod Loader 1.6.0, jhfm and planeint rebuilt.
+
+1.6.4: sound rework for the IL-2 game update of 25 Nov 2026 (bank rebuilt on the new stock bank; VSM Sound Mod v7.5 sounds, credited).

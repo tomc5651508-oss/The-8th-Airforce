@@ -1,4 +1,4 @@
-The 8th Airforce 1.6.3 - B-17E squadron for the Normandy and Bodenplatte careers
+The 8th Airforce 1.6.4 - B-17E squadron for the Normandy and Bodenplatte careers
 =======================================================================================
 
 PRIVATE BUILD. The B-17E exterior, cockpit, turret guns, crew seating and skins are the Jungle Hawks WT build
@@ -23,6 +23,10 @@ WHAT IT DOES
   1.6.3: updated for the IL-2 game update of 25 Nov 2026 (game build 20261124): GB Mod Loader 1.6.0 (Dusty's fix,
   GBML.dll + winmm.dll, the same files as Jungle Hawks v2.6.19), jhfm and planeint rebuilt for the new build.
   The 1.6.2 loader and plugins refuse to start on the new game build.
+  1.6.4: sound rework for the IL-2 game update of 25 Nov 2026 (game build 20261124): MasterBank.bank rebuilt on the new
+  stock bank (all 1913 game events resolve), B-17E VSM engine sounds kept, VSM gun rounds layered on every gun,
+  cockpit nose/gunner positions with a breech clack, VSM layer under bombs and hits. Sounds from VSM Sound Mod v7.5
+  (open source, used with credit; see CREDITS - VSM sounds.txt).
 - Adds the PLAYER squadron "324th Bombardment Squadron" (id 103801, country USA) to two careers
   (1.6: selectable in the career squadron list; it also flies as AI in other pilots' missions):
   Normandy (scg 22):    West Malling 15.04.1944 - 21.07.1944, Ibsley 22.07.1944 - 22.08.1944

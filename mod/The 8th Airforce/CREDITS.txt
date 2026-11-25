@@ -4,7 +4,7 @@ CREDITS - The 8th Airforce
 - B-17E performance reference: IL-2 1946 B-17E flight model data (1C).
 - Crew figures, bomb meshes, host aircraft, careers: IL-2 Great Battles (1C Game Studios); free, non-commercial,
   for IL-2 only.
-- Engine sounds: VSM Sound Mod v7.5 (IL-2 1946) samples.
+- Engine, gun, bomb and hit sounds: VSM Sound Mod v7.5 (IL-2 1946) samples, open source, used with credit (see CREDITS - VSM sounds.txt).
 - Nose art pictures: B-17 Flying Fortress: The Mighty 8th Redux (David Lagettie, Ken Hall, Chris Bates-Keegan,
   Eduardo Garcia, Ben Bastian, Shane Gavin).
 - GB Mod Loader 1.6.0 and the planeint plugin base (scriptcrc): Dusty. Redistributed with Dusty's permission.

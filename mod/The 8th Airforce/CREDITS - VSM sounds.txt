@@ -1,0 +1,8 @@
+CREDITS
+* Sounds from "VSM Sound Mod v7.5" (IL-2 Sturmovik 1946 sound mod). Credit and thanks to the VSM Sound Mod authors.
+  Licence per Pingu (25 Nov 2026): open source, use with credit. The archive itself carries no licence text.
+  Used: gun rounds of weapon.MGun*.prs, dev_01 (breech clack), bomb_cass01, bomb_04, exp3_10, tow_01, goverlimit,
+  radiostatic, radiostatic2, supercharger, ship_horn, Radial_Start, Radial_pre_Start, and (Jungle Hawks / 8th AF)
+  the VSM engine presets of the JH build-12 engine sounds.
+* Provenance note: some VSM WAVs carry embedded tags naming earlier sources (e.g. Microsoft CFS3, FSX add-ons).
+* Base game sound data (c) 1C Game Studios / IL-2 Great Battles.
